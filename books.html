@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكتب</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="aboutus.html">من نحن</a></li>
+                <li><a href="books.html">الكتب</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>الكتب المتوفرة</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ISBN</th>
+                    <th>العنوان</th>
+                    <th>السعر</th>
+                    <th>التفاصيل</th>
+                    <th>تحديد</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>978-9770916738</td>
+                    <td>ثلاثية غرناطة</td>
+                    <td>40.000 ل.س</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="checkbox" class="book-select"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5">
+                        <img src="one.png" alt="صورة ثلاثية غرناطة" width="100px" >
+                        <p> الناشر : دار الهلال</p>
+                        <p> تصنيف الكتاب : رواية </p>
+                        <p>ملخص : تدور الأحداث فيي مملكة غرناطة بعد سقوط جميع الممالك الإسلامية في الأندلس وتبدأ احداث الثلاثية في عام 1491 حيث سقطن غرناطة.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>978-9953891718</td>
+                    <td>موسم الهجرة إلى الشمال</td>
+                    <td>27.000 ل.س</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="checkbox" class="book-select"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5">
+                        <img src="two.png" alt="صورة موسم الهجرة إلى الشمال" style="width:100px;">
+                        <p>الناشر: منشورات رمال</p>
+                        <p>تصنيف الكتاب: رواية</p>
+                        <p>ملخص: في هذه الرواية يزور الطالب العربي مصطفى سعيد الغرب, مصطفى يصل من الجنوب الى الغرب كطالب ليتعرف قيم المجتمع البريطاني </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>978-9953451080</td>
+                    <td> بداية ونهاية </td>
+                    <td>25.000 ل.س</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="checkbox" class="book-select"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5">
+                        <img src="three.png" alt="صورة بداية ونهاية" style="width:100px;">
+                        <p> الناشر: عدة دور نشر </p>
+                        <p> تصنيف الكتاب: كتاب تاريخي </p>
+                        <p>ملخص: وهو عرض للتاريخ من بدء الخلق إلى نهايته يبدأ ببداية خلق السماوات والأرض والملائكة إلى خلق ادم</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>978-1234567890</td>
+                    <td>رجال في الشمس</td>
+                    <td>35.000 ل.س</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="checkbox" class="book-select"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5">
+                        <img src="four.png" alt="صورة رجال في الشمس" style="width:100px;">
+                        <p>الناشر: دار القلم</p>
+                        <p>تصنيف الكتاب: رواية</p>
+                        <p>ملخص: رواية تتحدث عن معاناة الفلسطينيين.</p>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>978-9876543210</td>
+                    <td>عائد إلى حيفا</td>
+                    <td>22.000 ل.س</td>
+                    <td><button class="toggle-details">إظهار التفاصيل</button></td>
+                    <td><input type="checkbox" class="book-select"></td>
+                </tr>
+                <tr class="details hidden">
+                    <td colspan="5">
+                        <img src="five.png" alt="صورة عائد إلى حيفا" style="width:100px;">
+                        <p>الناشر: دار الشروق</p>
+                        <p>تصنيف الكتاب: رواية سياسية</p>
+                        <p>ملخص: رواية عن الاحتلال الإسرائيلي ومعاناة الفلسطينيين.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="buy-button" disabled>شراء</button>
+    </main>
+    <footer>
+        <p>حقوق الطبع والنشر © 2024</p>
+    </footer>
+</body>
+</html>
